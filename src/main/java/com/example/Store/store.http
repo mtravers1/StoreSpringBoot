@@ -1,0 +1,35 @@
+GET http://localhost:8080/store
+
+GET http://localhost:8080/store
+
+### Create new Content
+POST http://localhost:8080/store
+Content-Type: application/json
+
+{
+
+    "id":3,
+    "name":"milk",
+    "price":4.99,
+    "category":"FOOD"
+}
+### Update existing Content
+
+PUT http://localhost:8080/store/2
+Content-Type: application/json
+
+{
+
+    "id":3,
+    "name":"yogurt",
+    "price":1.79,
+    "category":"FOOD"
+}
+
+
+### delete by id
+
+DELETE http://localhost:8080/store/2
+
+       
+
